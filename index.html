@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 3: HTML - Burger Menu</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 15px;
+        }
+        img {
+            max-width: 150px;
+            border-radius: 20px;
+        }
+
+        .preference p{
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+<div id="menu">
+    <h1>Menu a burger!</h1>
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80" alt="Double burger"></td>
+            <td>Double Burger</td>
+            <td>8.5 USD</td>
+        </tr>
+        <tr>
+            <td><img src="https://images.unsplash.com/photo-1547584370-2cc98b8b8dc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="Cheese burger"></td>
+            <td>Classic Burger</td>
+            <td>7.5 USD</td>
+        </tr>
+        <tr>
+            <td><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1068&q=80" alt="Bacon burger"></td>
+            <td>Bacon Burger</td>
+            <td>8 USD</td>
+        </tr>
+    </table>
+</div>
+    <hr>
+
+<form>
+
+    <div class="preference">
+        <h1>Create a burger!</h1>
+        <label for="protein">What type of protein would you like?</label>
+        <input type="text" name="protein"><hr>
+    </div>
+    <div class="preference">
+        <label for="patties">How many patties would you like?</label>
+        <input type="number" name="patties"><hr>
+    </div>
+    <div class="preference">
+        <p>How do you want your patty cooked?</p>
+        <label for="doneness">Rare<input type="range" name="doneness" min="Rare" max="Well-Done">Well-Done</label><hr>
+    </div>
+    <div class="preference">
+        <p>What toppings would you like?</p>
+        <input type="checkbox" name="Lettuce">
+        <label for="Lettuce">Lettuce</label>
+        <input type="checkbox" name="Tomato">
+        <label for="Tomato">Tomato</label>
+        <input type="checkbox" name="Onion">
+        <label for="Onion">Onion</label>
+        <hr>
+      </div>
+    <div class="preference">
+      <p>Would you like to add cheese?</p>
+      <input type="radio" name="Yes">
+      <label for="Yes">Yes</label>
+      <input type="radio" name="No">
+      <label for="No">No</label>
+      <hr>
+    </div>
+    <div class="preference">
+        <p>What type of bun would you like?
+            <select name="bun" id="bun">
+                <option value="Sesame">Sesame</option>
+                <option value="Pretzel">Pretzel</option>
+                <option value="Muffin">Muffin</option>
+            </select>
+        </p>
+        <hr>
+      </div>
+    <div class="preference">
+        <label for="sauce">What type of sauce would you like?</label>
+        <input type="text" name="sauce"><hr>
+    </div>
+    <div class="preference">
+        <p><label for="comments">Anything else you want to add?</label></p>
+        <textarea name="comments" id="comments" cols="50" rows="4"></textarea><hr>
+    </div>
+
+    <input type="submit" value="Submit">
+
+
+</form>
+    
+
+    
+</body>
+</html>
